@@ -17,8 +17,7 @@ import urllib3
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi('OyogjeC21mPXcHpnndwUqMi1+QmfaDVW9zJIr5ELHhKRu8+6sqfe/+HN/V2/ql5yP89f3Bo947C/SiSs1+IAPJRdEftER2pZJia0MYsOGlH8vV9qhPcRmtu1MGPl7dCaZZtbYr7/tZBp6g8vSV6NYgdB04t89/1O/w1cDnyilFU=
-')
+line_bot_api = LineBotApi('OyogjeC21mPXcHpnndwUqMi1+QmfaDVW9zJIr5ELHhKRu8+6sqfe/+HN/V2/ql5yP89f3Bo947C/SiSs1+IAPJRdEftER2pZJia0MYsOGlH8vV9qhPcRmtu1MGPl7dCaZZtbYr7/tZBp6g8vSV6NYgdB04t89/1O/w1cDnyilFU=')
 handler = WebhookHandler('3521355a22ae09eba7689d4126ac116d')
 
 APPID="Refrigerator"
