@@ -66,7 +66,7 @@ def handle_message(event):
     	#REST API NETPIE OFF LED
     	r = requests.put(url, data = {'':'OFF'} , auth=(str(KEY),str(SECRET)))
 
-    elif "temp?" in str(event.message.text):
+    elif "temp" in str(event.message.text):
     	#REST API NETPIE read sensor value
     	r = requests.put(url, data = {'':'temp?'} , auth=(str(KEY),str(SECRET)))
     	
