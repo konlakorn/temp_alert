@@ -20,10 +20,14 @@ app = Flask(__name__)
 line_bot_api = LineBotApi('yQh1VyVtqSvQck/1blc8QQ7sSxdIPNI9+CYB78XF9dUP0Ho2lGJ02rtnlaqe6aFlUeyVCszB6P6dy3GM5VgoY39OWbwmPCcljSOBcBbke6lc5ePxoaWp9pIRiC5M/hC2w/m25KnZ4MRvEOliFccGhAdB04t89/1O/w1cDnyilFU=')
 handler = WebhookHandler('2ba452b79e30fcf854be2b49785a7bd5')
 
-APPID="LineBotRpi"
-KEY = "bjuWQftBs1hMHSw"
-SECRET = "EUUdgsgDClUdqdzIDGnwjZ752"
+#APPID="LineBotRpi"
+#KEY = "bjuWQftBs1hMHSw"
+#SECRET = "EUUdgsgDClUdqdzIDGnwjZ752"
 Topic = "/LED_Control"
+
+APPID="Refrigerator"
+KEY = "AI9zeHuC2uR237y"
+SECRET = "8vODGz1eU3azG2Ua4Y4fclBkg"
 
 url = 'https://api.netpie.io/topic/' + str(APPID) + str(Topic)
 #curl -X PUT "https://api.netpie.io/topic/LineBotRpi/LED_Control" -d "ON" -u Jk0ej35pLC7TVr1:edWzwTUkzizhlyRamWWq6nF9I 
