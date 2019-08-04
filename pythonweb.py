@@ -30,10 +30,10 @@ KEY = "Ejb3t1c5Ya6eT7S"
 SECRET = "Fb9Oje5lXaAg0x5O2q9SL0qpM"
 
 url = 'https://api.netpie.io/topic/' + str(APPID) + str(Topic)
-#curl -X PUT "https://api.netpie.io/topic/LineBotRpi/LED_Control" -d "ON" -u Jk0ej35pLC7TVr1:edWzwTUkzizhlyRamWWq6nF9I 
+#curl -X PUT "https://api.netpie.io/topic/Refrigerator/bot" -d "temp" -u Ejb3t1c5Ya6eT7S:Fb9Oje5lXaAg0x5O2q9SL0qpM 
 
 urlRESTAPI = 'https://api.netpie.io/topic/' + str(APPID) + str(Topic) + '?auth=' + str(KEY) + ':' + str(SECRET)
-#https://api.netpie.io/topic/LineBotRpi/LED_Control?auth=Jk0ej35pLC7TVr1:edWzwTUkzizhlyRamWWq6nF9I
+#https://api.netpie.io/topic/Refrigerator/bot?auth=Ejb3t1c5Ya6eT7S:Fb9Oje5lXaAg0x5O2q9SL0qpM
 
 
 
@@ -77,8 +77,7 @@ def handle_message(event):
     	http = urllib3.PoolManager()
     	response = http.request('GET',urlRESTAPI) # read data from publish retain
 
-    	line_bot_api.reply_message(event.reply_token,TextSendMessage(text=str(response.data)))
-        
+	line_bot_api.reply_message(event.reply_token,TextSendMessage(text=((str(response.data)).split('"')[7]) + " °C"))        
         #r = requests.get(urlRESTAPI)
         #https://api.netpie.io/topic/LineBotRpi/LED_Control?auth=Jk0ej35pLC7TVr1:edWzwTUkzizhlyRamWWq6nF9I
         
