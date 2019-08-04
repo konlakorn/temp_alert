@@ -23,13 +23,13 @@ handler = WebhookHandler('3521355a22ae09eba7689d4126ac116d')
 APPID="Refrigerator"
 KEY = "AI9zeHuC2uR237y"
 SECRET = "8vODGz1eU3azG2Ua4Y4fclBkg"
-Topic = "/temp"
+Topic = "/bot"
 
 url = 'https://api.netpie.io/topic/' + str(APPID) + str(Topic)
-#curl -X PUT "https://api.netpie.io/topic/LineBotRpi/LED_Control" -d "ON" -u Jk0ej35pLC7TVr1:edWzwTUkzizhlyRamWWq6nF9I 
+#curl -X PUT "https://api.netpie.io/topic/Refrigerator/temp" -d "ON" -u AI9zeHuC2uR237y:8vODGz1eU3azG2Ua4Y4fclBkg 
 
 urlRESTAPI = 'https://api.netpie.io/topic/' + str(APPID) + str(Topic) + '?auth=' + str(KEY) + ':' + str(SECRET)
-#https://api.netpie.io/topic/LineBotRpi/LED_Control?auth=Jk0ej35pLC7TVr1:edWzwTUkzizhlyRamWWq6nF9I
+#https://api.netpie.io/topic/Refrigerator/temp?auth=AI9zeHuC2uR237y:8vODGz1eU3azG2Ua4Y4fclBkg
 
 
 
