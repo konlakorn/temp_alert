@@ -22,7 +22,7 @@ handler = WebhookHandler('3521355a22ae09eba7689d4126ac116d')
 
 APPID="Refrigerator"
 KEY = "AI9zeHuC2uR237y"
-SECRET = "8vODGz1eU3azG2Ua4Y4fclBka"
+SECRET = "8vODGz1eU3azG2Ua4Y4fclBkg"
 Topic = "/bot"
 
 url = 'https://api.netpie.io/topic/' + str(APPID) + str(Topic)
