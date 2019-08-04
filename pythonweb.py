@@ -17,13 +17,13 @@ import urllib3
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi('yQh1VyVtqSvQck/1blc8QQ7sSxdIPNI9+CYB78XF9dUP0Ho2lGJ02rtnlaqe6aFlUeyVCszB6P6dy3GM5VgoY39OWbwmPCcljSOBcBbke6lc5ePxoaWp9pIRiC5M/hC2w/m25KnZ4MRvEOliFccGhAdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('2ba452b79e30fcf854be2b49785a7bd5')
+line_bot_api = LineBotApi('OyogjeC21mPXcHpnndwUqMi1+QmfaDVW9zJIr5ELHhKRu8+6sqfe/+HN/V2/ql5yP89f3Bo947C/SiSs1+IAPJRdEftER2pZJia0MYsOGlH8vV9qhPcRmtu1MGPl7dCaZZtbYr7/tZBp6g8vSV6NYgdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('3521355a22ae09eba7689d4126ac116d')
 
 #APPID="LineBotRpi"
 #KEY = "bjuWQftBs1hMHSw"
 #SECRET = "EUUdgsgDClUdqdzIDGnwjZ752"
-Topic = "/LED_Control"
+Topic = "/bot"
 
 APPID="Refrigerator"
 KEY = "Ejb3t1c5Ya6eT7S"
