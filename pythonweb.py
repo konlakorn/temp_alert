@@ -26,8 +26,8 @@ handler = WebhookHandler('2ba452b79e30fcf854be2b49785a7bd5')
 Topic = "/LED_Control"
 
 APPID="Refrigerator"
-KEY = "AI9zeHuC2uR237y"
-SECRET = "8vODGz1eU3azG2Ua4Y4fclBkg"
+KEY = "Ejb3t1c5Ya6eT7S"
+SECRET = "Fb9Oje5lXaAg0x5O2q9SL0qpM"
 
 url = 'https://api.netpie.io/topic/' + str(APPID) + str(Topic)
 #curl -X PUT "https://api.netpie.io/topic/LineBotRpi/LED_Control" -d "ON" -u Jk0ej35pLC7TVr1:edWzwTUkzizhlyRamWWq6nF9I 
